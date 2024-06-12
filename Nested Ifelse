@@ -1,0 +1,29 @@
+package corejava;
+
+public class Nestedifelse {
+		int findMax(int a,int b,int c) {
+			if(a>b) {
+				if(a>c) {
+					return a;
+				}
+				else {
+					return c;
+				}
+			}
+				else {
+					if(b>a) {
+						return b;
+					}
+					else {
+						return c;
+					}
+				}
+		}
+		public static void main(String[] args) {
+		Nestedifelse  n = new Nestedifelse();
+		System.out.println(n.findMax(10,3,12));
+			}
+		
+	}
+
+
