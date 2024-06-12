@@ -1,0 +1,29 @@
+package corejava;
+class Student{
+	String name;
+	int marks;
+	boolean CheckPass()
+	{
+		if(marks>40) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+}
+
+public class ControlFlow {
+	public static void main(String[]args) {
+		Student s1 = new Student();
+		Student s2 = new Student();
+		s1.name = "nagu";
+		s1.marks = 45;
+		s2.name = "ram";
+		s2.marks = 34;
+		System.out.println(s1.CheckPass());
+		System.out.println(s2.CheckPass());
+		
+	}
+
+}
